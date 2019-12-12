@@ -8,6 +8,14 @@
 
 #define STORAGE_FILEPATH 		"storage.txt"
 
+struct createSystem {
+	int N_BUILDING;
+	int N_FLOOR;
+	int N_ROOM;
+	char password[4];
+	
+};
+
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 
@@ -52,6 +60,18 @@ int main(int argc, char *argv[]) {
 	int x, y, nBuilding, nRoom;
 	char msg[MAX_MSG_SIZE+1];
 	char passwd[PASSWD_LEN+1];
+	
+	struct createSystem s;
+	
+	s.N_BUILDING
+	s.N_FLOOR
+	s.N_ROOM
+	s.password
+	
+	printf("받는사람동: %d\n, s.N_BUILDING");
+	printf("받는사람층: %d\n, s.N_FLOOR");
+	printf("받는사람방: %d\n, s.N_ROOM");
+	printf("비밀번호: %d\n, s.password");
 	
 	//1. initialize the delivery system
 	if (str_createSystem(STORAGE_FILEPATH) != 0)
